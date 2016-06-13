@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="293.0" minWidth="458.0" prefHeight="293.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="211.0" prefWidth="308.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="78.0" prefWidth="308.0">
+               <children>
+                  <TextField fx:id="username_field" onKeyPressed="#keyboard_log" promptText="Enter your nick" />
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="308.0">
+               <children>
+                  <Region prefHeight="38.0" prefWidth="59.0" />
+                  <Button fx:id="login_button" mnemonicParsing="false" onAction="#login" text="Log In" />
+               </children>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="317.0">
+               <children>
+                  <Region prefHeight="94.0" prefWidth="52.0" />
+                  <Label fx:id="login_status" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Region prefHeight="96.0" prefWidth="449.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <Region prefHeight="260.0" prefWidth="141.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
